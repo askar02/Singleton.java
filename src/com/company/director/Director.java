@@ -21,7 +21,7 @@ public class Director {
         builder.setTransmission(Transmission.SEMI_AUTOMATIC);
         builder.setTripComputer(new TripComputer());
         builder.setGPSNavigator(new GPSNavigator());
-    }
+    }//method
 
     public void constructCityCar(Builder builder) {
         builder.setCarType(CarType.CITY_CAR);
@@ -30,7 +30,7 @@ public class Director {
         builder.setTransmission(Transmission.AUTOMATIC);
         builder.setTripComputer(new TripComputer());
         builder.setGPSNavigator(new GPSNavigator());
-    }
+    }//method
 
     public void constructSUV(Builder builder) {
         builder.setCarType(CarType.SUV);
@@ -38,5 +38,5 @@ public class Director {
         builder.setEngine(new Engine(2.5, 0));
         builder.setTransmission(Transmission.MANUAL);
         builder.setGPSNavigator(new GPSNavigator());
-    }
+    }//method
 }

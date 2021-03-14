@@ -8,12 +8,12 @@ import java.awt.event.ActionListener;
 /**
  * Windows button implementation.
  */
-public class WindowsButton implements Button {
-    JPanel panel = new JPanel();
-    JFrame frame = new JFrame();
+public class WindowsButton implements Button {//implementation of windows button
+    JPanel panel = new JPanel();//giving the value for panel
+    JFrame frame = new JFrame();//giving the value for frame
     JButton button;
 
-    public void render() {
+    public void render() {//render method
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JLabel label = new JLabel("Hello World!");
         label.setOpaque(true);
@@ -31,7 +31,7 @@ public class WindowsButton implements Button {
         onClick();
     }
 
-    public void onClick() {
+    public void onClick() {//onClick method
         button = new JButton("Exit");
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

@@ -7,7 +7,7 @@ import com.company.buttons.Button;
  * should have some core business logic which needs different products to be
  * created.
  */
-public abstract class Dialog {
+public abstract class Dialog {//abstract class
 
     public void renderWindow() {
         // ... other code ...

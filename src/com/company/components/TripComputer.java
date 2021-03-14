@@ -11,11 +11,11 @@ public class TripComputer {
 
     public void setCar(Car car) {
         this.car = car;
-    }
+    }//method that change the value of Car
 
     public void showFuelLevel() {
         System.out.println("Fuel level: " + car.getFuel());
-    }
+    }//method that that print the level of fuel
 
     public void showStatus() {
         if (this.car.getEngine().isStarted()) {
@@ -23,5 +23,5 @@ public class TripComputer {
         } else {
             System.out.println("Car isn't started");
         }
-    }
+    }//method that make you know, car is started or not
 }
